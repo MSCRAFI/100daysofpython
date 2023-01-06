@@ -1,0 +1,12 @@
+1. Celsius to Fahrenheit (CtoF)
+> F = (9/5)*C + 32
+2. Celsius to Kelvin (CtoK)
+> K = C + 273.15
+3. Fahrenheit to Celsius (FtoC)
+> C = (5/9)*(F - 32)
+4. Fahrenheit to Kelvin (FtoK)
+> K = (5/9)*(F - 32) + 273.15
+5. Kelvin to Celsius (KtoC)
+> C = K - 273.15
+6. Kelvin to Fahrenheit (KtoF)
+> F = (9/5)*K - 459.67
