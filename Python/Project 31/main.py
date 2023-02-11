@@ -4,15 +4,15 @@ import csv
 
 # class for all features
 class budgetTracker:
-    CREATE_BUDGET = open("expense.csv", "w", newline="", encoding="utf-8")
-    ADD_BUDGET = open("expense.csv", "a", newline="", encoding="utf-8")
+#     CREATE_BUDGET = open("expense.csv", "w", newline="", encoding="utf-8")
+#     ADD_BUDGET = open("expense.csv", "a", newline="", encoding="utf-8")
 
     # feature to add create expenses
     @classmethod
     def create_addExpenses(self, add_amount, add_date, add_category, add_description):
-        with self.CREATE_BUDGET:
+        with open("expense.csv", "w", newline="", encoding="utf-8") as CREATE_BUDGET:
             fieldnames = ["amount", "date", "category", "description"]
-            writer = csv.DictWriter(self.CREATE_BUDGET, fieldnames=fieldnames)
+            writer = csv.DictWriter(CREATE_BUDGET, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerow({"amount": add_amount, "date": add_date, "category": add_category, "description": add_description})
     
