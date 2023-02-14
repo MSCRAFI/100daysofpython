@@ -1,16 +1,12 @@
 nums = [3,4,2]
 target = 6
-num_len = 0
 new_len = 0
 new = []
 new_res = []
 final_result = []
 final_len = 0
-for i in nums:
-    num_len += 1
-
 for a in nums:
-    for b in range(num_len):
+    for b in range(len(nums):
         if (a + nums[b]) != target:
             continue
         elif (a + nums[b]) == target and nums[b] != a:
